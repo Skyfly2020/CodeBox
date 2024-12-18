@@ -15,7 +15,7 @@ function searchCourse() {
     const input = document.getElementById('courseName').value.trim();
     if (input) {
         // Переход на страницу поиска с передачей параметра courseName
-        window.location.href = `search-container.html?courseName=${encodeURIComponent(input)}`;
+        window.location.href = `../CodeBox_project/search-container.html?courseName=${encodeURIComponent(input)}`;
     } else {
         alert('Введите название курса!');
     }
@@ -23,11 +23,11 @@ function searchCourse() {
 
 const courses = [
     { name: "Python", id: 1, link: "python-courses/pyt1.html", icon: "pythons.ico" },
-    { name: "PHP", id: 2, link: "python-courses/pyt1.html", icon: "phps.ico"  },
-    { name: "Java", id: 3, link: "python-courses/pyt1.html", icon: "javas.ico"  },
-    { name: "c++", id: 4, link: "python-courses/pyt1.html", icon: "cpps.ico"  },
-    { name: "DJango", id: 5, link: "python-courses/pyt1.html", icon: "pydjs.ico" },
-    { name: "c#", id: 6, link: "python-courses/pyt1.html", icon: "cshp.ico"  }
+    { name: "PHP", id: 2, link: "php-courses/pyt1.html", icon: "phps.ico"  },
+    { name: "Java", id: 3, link: "java-courses/pyt1.html", icon: "javas.ico"  },
+    { name: "C++", id: 4, link: "cpp-courses/pyt1.html", icon: "cpps.ico"  },
+    { name: "C", id: 5, link: "C-courses/pyt1.html", icon: "c.ico" },
+    { name: "c#", id: 6, link: "cshp-courses/pyt1.html", icon: "cshp.ico"  }
 ];
 
 function displayResults() {
@@ -72,7 +72,7 @@ function displayResults() {
             buttonText.textContent = "Начать обучение";
 
             const buttonIcon = document.createElement('img');
-            buttonIcon.src = "menu_b.png"; // Заменить на нужную иконку
+            buttonIcon.src = "menu_b.png";
             buttonIcon.alt = "Меню";
             buttonIcon.className = 'catalog-btn-menu-icon';
 

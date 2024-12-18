@@ -745,7 +745,6 @@ body {
 
 .courses-body {
     min-height: auto; /* Высота страницы */
-    background-color: #474747;
 }
 .courses-body2 {
     width: 100%;
@@ -1054,20 +1053,28 @@ body {
     margin-bottom: 5vh;
 }
 .search-slide {
-    background-color: #373737;
     margin-left: 25%;
     width: 50%;
-    height: 88vh;
+    transform: translate(-50%, auto);
+    height: 100vh;
+    background-color: #373737; /* Цвет верхней панели */
     color: white;
     display: flex;
     flex-direction: column; /* Располагаем элементы вертикально */
     justify-content: top; /* Центрируем по вертикали */
     align-items: center; /* Центрируем по горизонтали */
     gap: 100px;
+    padding: 0px 0px;
     padding-top: 80px;
     box-sizing: border-box; /* Учитываем padding в ширине */
 }
-
+@media (max-width: 700px) {
+    .search-slide{
+        margin-left: 0%;
+        transform: translate(auto, auto);
+        width: 100%;
+    }
+}
 .search-slide-text{
     /*background-color: green;*/
     display: flex;
